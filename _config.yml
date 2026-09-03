@@ -21,6 +21,12 @@ collections:
 defaults:
   - scope:
       path: ""
+      type: data_pipelines
+    values:
+      layout: catalogue-entry
+      category: Data pipelines
+  - scope:
+      path: ""
       type: data_resources
     values:
       layout: catalogue-entry
@@ -31,12 +37,6 @@ defaults:
     values:
       layout: catalogue-entry
       category: Software
-  - scope:
-      path: ""
-      type: data_pipelines
-    values:
-      layout: catalogue-entry
-      category: Data pipelines
 exclude:
   - README.md
   - CONTRIBUTING.md
