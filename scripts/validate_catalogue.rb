@@ -2,7 +2,7 @@
 require "yaml"
 require "uri"
 
-collections = %w[_data-resources _software _data-pipelines]
+collections = %w[_data_resources _software _data_pipelines]
 required = %w[title description authors institutions links]
 errors = []
 files = collections.flat_map { |folder| Dir.glob(File.join(folder, "**", "*.md")) }
