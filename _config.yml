@@ -1,0 +1,41 @@
+title: DATAMIND Catalogue
+description: A curated catalogue of data resources, software and data pipelines for mental health research.
+url: "https://datamind-uk.github.io"
+baseurl: "/catalogue"
+repository: DATAMIND-UK/catalogue
+markdown: kramdown
+permalink: pretty
+collections:
+  data_resources:
+    output: true
+    permalink: /data-resources/:name/
+  software:
+    output: true
+    permalink: /software/:name/
+  data_pipelines:
+    output: true
+    permalink: /data-pipelines/:name/
+defaults:
+  - scope:
+      path: ""
+      type: data_resources
+    values:
+      layout: catalogue-entry
+      category: Data resources
+  - scope:
+      path: ""
+      type: software
+    values:
+      layout: catalogue-entry
+      category: Software
+  - scope:
+      path: ""
+      type: data_pipelines
+    values:
+      layout: catalogue-entry
+      category: Data pipelines
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - scripts
+  - vendor

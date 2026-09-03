@@ -1,0 +1,15 @@
+<section class="catalogue-section">
+  <div class="section-heading"><div><h2>{{ include.title }}</h2><p>{{ include.description }}</p></div><span class="count">{{ include.entries.size }}</span></div>
+  <div class="card-grid">
+  {% assign entries = include.entries | sort: "title" %}
+  {% for entry in entries %}
+    <article class="card">
+      <h3><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h3>
+      <p>{{ entry.description }}</p>
+      <p class="card-meta">{{ entry.institutions | join: " · " }}</p>
+    </article>
+  {% else %}
+    <p>No entries yet.</p>
+  {% endfor %}
+  </div>
+</section>

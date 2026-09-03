@@ -1,0 +1,79 @@
+name: Suggest a catalogue change
+description: Request a new entry, correction or update
+title: "[Catalogue]: "
+labels: ["catalogue-change", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the DATAMIND catalogue. Complete the fields below. Maintainers will review the request before publishing it.
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Type of change
+      options:
+        - Add a new entry
+        - Update an existing entry
+        - Correct or remove an entry
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Catalogue category
+      options:
+        - Data resource
+        - Software
+        - Data pipeline
+    validations:
+      required: true
+  - type: input
+    id: resource_title
+    attributes:
+      label: Resource title
+      placeholder: The public name of the resource
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: Explain what the resource is and how it may help analyse mental health outcomes.
+    validations:
+      required: true
+  - type: textarea
+    id: authors
+    attributes:
+      label: Authors or teams
+      placeholder: One author or team per line
+    validations:
+      required: true
+  - type: textarea
+    id: institutions
+    attributes:
+      label: Institutions
+      placeholder: One institution per line
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Resource links
+      description: Include full URLs and a short label for each link.
+      placeholder: "Resource homepage: https://example.org/resource"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: For an update or correction, explain what should change and why.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I have checked that the links work and the information is suitable for public display.
+          required: true
+        - label: I understand that maintainers may edit or decline this suggestion.
+          required: true

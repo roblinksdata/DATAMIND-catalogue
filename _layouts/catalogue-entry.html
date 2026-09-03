@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="entry">
+  <p class="breadcrumb"><a href="{{ '/' | relative_url }}">Catalogue</a> / {{ page.category }}</p>
+  <p class="eyebrow">{{ page.category }}</p>
+  <h1>{{ page.title }}</h1>
+  <p class="lead">{{ page.description }}</p>
+
+  <dl class="metadata">
+    <div><dt>Authors</dt><dd>{{ page.authors | join: ", " }}</dd></div>
+    <div><dt>Institutions</dt><dd>{{ page.institutions | join: ", " }}</dd></div>
+  </dl>
+
+  <h2>Resource links</h2>
+  <ul class="resource-links">
+  {% for link in page.links %}
+    <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+  {% endfor %}
+  </ul>
+
+  {{ content }}
+</article>
