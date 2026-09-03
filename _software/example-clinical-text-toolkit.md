@@ -1,7 +1,7 @@
 ---
 title: "Example Clinical Text Toolkit"
 description: "An illustrative software entry for tools that prepare and analyse clinical free text for mental health research."
-status: "In Development"
+status: "Paused"
 authors:
   - "Example Software Team"
 institutions:
