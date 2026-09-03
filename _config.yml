@@ -1,8 +1,8 @@
 title: DATAMIND Catalogue
 description: A curated catalogue of data resources, software and data pipelines for mental health research.
-url: "https://datamind-uk.github.io"
-baseurl: "/catalogue"
-repository: DATAMIND-UK/catalogue
+url: "https://roblinksdata.github.io"
+baseurl: "/DATAMIND-catalogue"
+repository: roblinksdata/DATAMIND-catalogue
 markdown: kramdown
 permalink: pretty
 collections:
