@@ -9,13 +9,13 @@ datamind_github_org_url: "https://github.com/DATAMIND-UK/"
 markdown: kramdown
 permalink: pretty
 collections:
-  data_resources:
+  data-resources:
     output: true
     permalink: /data-resources/:name/
   software:
     output: true
     permalink: /software/:name/
-  data_pipelines:
+  data-pipelines:
     output: true
     permalink: /data-pipelines/:name/
 defaults:
