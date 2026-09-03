@@ -1,6 +1,7 @@
 ---
 title: "Example Mental Health Outcomes Pipeline"
 description: "An illustrative reusable pipeline for deriving and reporting mental health outcomes from linked clinical data."
+status: "Mature"
 authors:
   - "Example Analytics Team"
 institutions:

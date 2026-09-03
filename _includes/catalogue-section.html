@@ -4,7 +4,11 @@
   {% assign entries = include.entries | sort: "title" %}
   {% for entry in entries %}
     <article class="card">
-      <h3><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h3>
+      <div class="card-header">
+        <h3><a href="{{ entry.url | relative_url }}">{{ entry.title }}</a></h3>
+        {% assign status_class = entry.status | downcase | replace: " ", "-" %}
+        <span class="status status-{{ status_class }}">{{ entry.status }}</span>
+      </div>
       <p>{{ entry.description }}</p>
       <p class="card-meta">{{ entry.institutions | join: " · " }}</p>
     </article>

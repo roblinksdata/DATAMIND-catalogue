@@ -5,9 +5,12 @@ layout: default
   <p class="breadcrumb"><a href="{{ '/' | relative_url }}">Catalogue</a> / {{ page.category }}</p>
   <p class="eyebrow">{{ page.category }}</p>
   <h1>{{ page.title }}</h1>
+  {% assign status_class = page.status | downcase | replace: " ", "-" %}
+  <p><span class="status status-{{ status_class }}">{{ page.status }}</span></p>
   <p class="lead">{{ page.description }}</p>
 
   <dl class="metadata">
+    <div><dt>Status</dt><dd>{{ page.status }}</dd></div>
     <div><dt>Authors</dt><dd>{{ page.authors | join: ", " }}</dd></div>
     <div><dt>Institutions</dt><dd>{{ page.institutions | join: ", " }}</dd></div>
   </dl>

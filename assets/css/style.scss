@@ -24,6 +24,15 @@ h1,h2,h3 { line-height:1.15; } h1 { max-width:850px; font-size:clamp(2.4rem,6vw,
 .section-heading h2 { margin-bottom:.1rem; }.section-heading p { margin-top:0;color:var(--muted);}.count { flex:none; min-width:2.5rem; text-align:center; padding:.35rem; border-radius:2rem; background:var(--pink); color:white; font-weight:bold; }
 .card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:1.25rem; }
 .card { border:1px solid var(--border); border-radius:0 1.5rem 0 1.5rem; padding:1.4rem; box-shadow:0 8px 24px rgba(22,35,59,.07); }
+.card-header { display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; }
+.card-header h3 { margin:0; }
+.status { display:inline-block; flex:none; padding:.25rem .65rem; border:1px solid transparent; border-radius:2rem; font-size:.82rem; font-weight:bold; line-height:1.4; white-space:nowrap; }
+.status-planned { color:#3f4854; background:#edf0f2; border-color:#c8ced3; }
+.status-in-development { color:#654600; background:#fff1bd; border-color:#dfbd54; }
+.status-active { color:#005e5c; background:#d9f3ef; border-color:#6ec5bb; }
+.status-mature { color:#29496f; background:#dceafe; border-color:#85aad5; }
+.status-paused { color:#723b00; background:#fce3c5; border-color:#df9f58; }
+.status-archived { color:#565656; background:#e8e8e8; border-color:#ababab; }
 .card h3 { margin-top:0; }.card-meta { color:var(--muted); font-size:.9rem; }
 .contribute { padding:2rem; background:var(--ink); color:white; border-radius:0 2rem 0 2rem; }.contribute a { color:white; }
 .button { display:inline-block; margin:.3rem .5rem .3rem 0; padding:.65rem 1rem; border-radius:2rem; background:var(--pink); color:white; font-weight:bold; text-decoration:none; }.button-secondary { background:var(--teal); }

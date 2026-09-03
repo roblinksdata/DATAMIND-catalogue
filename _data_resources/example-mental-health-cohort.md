@@ -1,6 +1,7 @@
 ---
 title: "Example Mental Health Cohort"
 description: "An illustrative catalogue entry showing how to describe a longitudinal data resource relevant to mental health outcomes."
+status: "Active"
 authors:
   - "Example Data Team"
 institutions:

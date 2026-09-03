@@ -1,6 +1,7 @@
 ---
 title: "Resource title"
 description: "A short, plain-language description of the resource and why it is useful."
+status: "Active"
 authors:
   - "Author or team name"
 institutions:

@@ -3,7 +3,8 @@ require "yaml"
 require "uri"
 
 collections = %w[_data_resources _software _data_pipelines]
-required = %w[title description authors institutions links]
+required = %w[title description status authors institutions links]
+allowed_statuses = ["Planned", "In Development", "Active", "Mature", "Paused", "Archived"]
 errors = []
 files = collections.flat_map { |folder| Dir.glob(File.join(folder, "**", "*.md")) }
 
@@ -23,6 +24,9 @@ files.each do |path|
   required.each do |field|
     value = data[field]
     errors << "#{path}: '#{field}' is required" if value.nil? || (value.respond_to?(:empty?) && value.empty?)
+  end
+  unless allowed_statuses.include?(data["status"])
+    errors << "#{path}: 'status' must be one of: #{allowed_statuses.join(', ')}"
   end
   %w[authors institutions].each do |field|
     errors << "#{path}: '#{field}' must be a non-empty list" unless data[field].is_a?(Array) && data[field].all? { |v| v.is_a?(String) && !v.strip.empty? }

@@ -27,6 +27,20 @@ body:
         - Data pipeline
     validations:
       required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Current project status
+      description: Select the status that best describes the project.
+      options:
+        - Planned
+        - In Development
+        - Active
+        - Mature
+        - Paused
+        - Archived
+    validations:
+      required: true
   - type: input
     id: resource_title
     attributes:
