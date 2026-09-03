@@ -16,16 +16,15 @@ A Jekyll and GitHub Pages repository for curating data resources, software and d
 
 ## Publish on GitHub Pages
 
-1. Create `DATAMIND-UK/catalogue` with `main` as the default branch.
-2. Push this repository to `main`.
-3. In **Settings > Pages > Build and deployment > Source**, choose **GitHub Actions**.
-4. The deployment workflow will publish to `https://datamind-uk.github.io/catalogue/`.
+The deployment workflow will publish to `https://datamind-uk.github.io/catalogue/`.
 
 ## Add an entry
 
 Copy `_templates/catalogue-entry.md` to the appropriate collection folder, rename it, complete its YAML front matter, and commit it. The home page updates automatically.
 
 ## Local preview
+
+(bundle is part of ruby)
 
 ```bash
 bundle install
