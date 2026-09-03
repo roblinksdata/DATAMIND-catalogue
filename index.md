@@ -19,5 +19,5 @@ title: Catalogue
 <section class="contribute">
   <h2>Suggest a resource or correction</h2>
   <p>Experienced with GitHub? Open a pull request. Otherwise, use the guided issue form and tell us what you would like added or changed.</p>
-  <p><a class="button" href="https://github.com/DATAMIND-UK/catalogue/issues/new?template=catalogue-change.yml">Suggest a catalogue change</a> <a class="button button-secondary" href="https://github.com/DATAMIND-UK/catalogue/blob/main/CONTRIBUTING.md">Contribution guide</a></p>
+  <p><a class="button" href="{{  site.github_repo_url  }}{{ site.catalogue_issue_path }}">Suggest a catalogue change</a> <a class="button button-secondary" href="{{  site.github_repo_url }}/blob/main/CONTRIBUTING.md">Contribution guide</a></p>
 </section>
