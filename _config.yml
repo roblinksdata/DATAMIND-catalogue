@@ -3,7 +3,6 @@ description: A curated catalogue of data resources, software and data pipelines 
 url: "https://roblinksdata.github.io"
 baseurl: "/DATAMIND-catalogue"
 github_repo_url: "https://github.com/roblinksdata/DATAMIND-catalogue/"
-catalogue_issue_path: "issues/new?template=catalogue-change.yml"
 repository: roblinksdata/DATAMIND-catalogue
 datamind_github_org_url: "https://github.com/DATAMIND-UK/"
 markdown: kramdown

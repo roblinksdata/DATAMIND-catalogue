@@ -2,6 +2,12 @@
 
 A Jekyll and GitHub Pages repository for curating data resources, software and data pipelines that support analysis of mental health outcomes.
 
+The site itself is available at <https://datamind-uk.github.io/catalogue/>.
+
+## Contributing
+
+Read our [Contribution guide](./CONTRIBUTING.md) for information on how to add or amend a catalogue entry.
+
 ## Repository structure
 
 - `_data-resources/`: one Markdown file per data resource
@@ -11,7 +17,6 @@ A Jekyll and GitHub Pages repository for curating data resources, software and d
 - `index.md`: automatically assembles all three collections
 - `_layouts/`, `_includes/`, `assets/`: Jekyll presentation layer
 - `scripts/validate_catalogue.rb`: metadata and URL validation
-- `.github/ISSUE_TEMPLATE/`: guided change request
 - `.github/workflows/`: validation and Pages deployment
 
 ## Publish on GitHub Pages
