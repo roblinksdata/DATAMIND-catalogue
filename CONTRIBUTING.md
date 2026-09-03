@@ -4,7 +4,7 @@ Thank you for helping improve the catalogue.
 
 ## The easiest route: open an issue
 
-You do not need to know Git or edit any files. Use the [guided catalogue change form](./issues/new?template=catalogue-change.yml). Provide a title, short description, authors or teams, institutions and working links. A maintainer can turn the request into a catalogue entry.
+You do not need to know Git or edit any files. Use the [guided catalogue change form](https://github.com/DATAMIND-UK/catalogue/issues/new?template=catalogue-change.yml). Provide a title, short description, authors or teams, institutions and working links. A maintainer can turn the request into a catalogue entry.
 
 ## Make a pull request
 
